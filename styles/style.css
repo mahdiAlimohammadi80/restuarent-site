@@ -9,3 +9,11 @@
     box-sizing: border-box;
     font-size: 'iran-sans';
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: red;
+}
