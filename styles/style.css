@@ -68,3 +68,108 @@ header .front .info-box{
 .address-time .time{
     margin-right: 30px;
 }
+header .bottom{
+    padding: 0 10px;
+    transition: .3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+header.active .bottom{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #706f61;
+    z-index: 100;
+    padding: 0 30px;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+header .logo img{
+    width: 150px;
+    height: 150px;
+}
+header .logo h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: -20px;
+}
+header .menu-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 130px;
+}
+header .menu-item{
+    margin: 15px;
+    padding: 10px;
+    position: relative;
+    transition: .2s;
+}
+header .menu-item::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #d5cf96;
+    transition: .2s;
+}
+header .menu-item:hover::before{
+    width: 100%;
+}
+header .menu-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+header .button{
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+}
+header .button .reserve-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background:rgba(255, 255, 255, .2);
+    font-size: 16px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+header .button .shop{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.header .button .shop-link{
+    text-decoration: none; 
+}
+.shop-icon{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    background:rgba(255, 255, 255, .2);
+    border-radius: 6px;
+}
+header .button .reserve-btn:hover ,
+.shop-icon:hover{
+    background:rgba(255, 255, 255, .3);
+    color: #fff;
+}
