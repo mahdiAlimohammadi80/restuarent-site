@@ -10,10 +10,13 @@
     font-size: 'iran-sans';
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    direction: rtl;
+    background-color: rgb(48, 45, 47);
+    scroll-behavior: smooth;
 }
-h2{
-    color: red;
+header{
+    padding: 20px 30px;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
 }
