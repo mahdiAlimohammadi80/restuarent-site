@@ -247,3 +247,14 @@ modalCloseBtn.addEventListener('click',()=>{
     header.classList.add('active');
     main.style.filter = 'blur(0)';
 })
+
+//----------------------------------------------------------
+
+// fix navbar on top on scroll
+
+window.addEventListener('scroll',()=>{
+    if(window.scrollY > 150){
+        return header.classList.add('active')
+    }
+    header.classList.remove('active');
+});
