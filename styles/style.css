@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'iran-sans';
-    src: url(font/IRANSansXFaNum-Regular.woff);
+    src: url(/font/IRANSansXFaNum-Regular.woff);
 }
 
 *{
@@ -172,4 +172,97 @@ header .button .reserve-btn:hover ,
 .shop-icon:hover{
     background:rgba(255, 255, 255, .3);
     color: #fff;
+}
+header .details{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+header .detail{
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    opacity: 0;
+    z-index: -1;
+    transition: .2s;
+}
+header .detail.active{
+    display: flex;
+    opacity: 1;
+    z-index: 10;
+}
+header .detail h2{
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    animation: fadeUp 5s forwards .1s;
+}
+header .detail p{
+    opacity: 0;
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    margin: 5px;
+    max-width: 350px;
+    animation: fadeUp 5s forwards .1s;
+}
+header .details .details-btn{
+    opacity: 0;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #f4f0ff;
+    outline: none;
+    background:rgba(255, 255, 255, .2);
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    animation: fadeUp 5s forwards .1s;
+}
+@keyframes fadeUp{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+header .details .details-btn:hover{
+    background-color: #333;
+}
+header .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(1);
+    background:rgba(255, 255, 255, .2);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition: .2s;
+    cursor: pointer;
+}
+header .arrow-right{
+    right: 30px;
+}
+header .arrow-left{
+    left: 30px;
+}
+header .arrow i{
+    font-size: 25px;
 }
