@@ -541,4 +541,89 @@ header .arrow i{
 .menu-modal .menu-cards .buy-btn:hover{
     background: rgba(255, 255, 255, .3);
 }
+.introduce{
+    margin-top: 60px;
+    padding: 20px 30px;
+}
+.introduce .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.introduce .gallery{
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introduce .gallery .images{
+    max-width: 95%;
+    gap: 15px;
+    columns:2 320px;
+    margin-top: 40px;
+}
+.introduce .images .card{
+    width: 100%;
+    list-style: none;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    position: relative;
+    transition: .2s;
+}
+.introduce .images .card:hover{
+    transform: scale(1.03);
+}
+.introduce .images img{
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
+}
+.introduce .details{
+    text-align: center;
+    color: #fff;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introduce .details h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.introduce .details p{
+    font-size: 17px;
+    opacity: .8;
+    line-height: 30px;
+    margin-top: 10px;
+    max-width: 700px;
+}
+.introduce .history-phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+.introduce .history-text{
+    background:linear-gradient(45deg , rgb(255, 162, 0) ,rgb(255, 247, 0)) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+.introduce .history-text i{
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
 
