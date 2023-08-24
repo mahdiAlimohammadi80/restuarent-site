@@ -258,3 +258,20 @@ window.addEventListener('scroll',()=>{
     }
     header.classList.remove('active');
 });
+
+//---------------------------------------------------------
+
+// comment slider 
+
+const comments = document.querySelectorAll('.comment');
+const firstComment = document.querySelector('.comment.active');
+
+let commentIndex = 0;
+
+function nextComment(){
+    commentIndex++;
+    commentIndex = commentIndex > comments.length - 1 ? 0 : commentIndex;
+    firstComment.style.marginRight = `-${commentIndex * 150}%`;
+}
+
+setInterval(nextComment,3000);

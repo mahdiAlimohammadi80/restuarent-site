@@ -739,6 +739,76 @@ header .arrow i{
     opacity: 1;
     z-index: 10;
 }
+.user-comment{
+    margin-top: 80px;
+    padding: 20px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-comment .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(20%) grayscale(40%);
+}
+.user-comment .container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.user-comment .container .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+.user-comment .comment-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+    height: 300px;
+    margin: 20px auto;
+}
+.user-comment .comment{
+    position: relative;
+    width:50%;
+    margin: 0  auto;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+    transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.user-comment .image{
+    width: 150px;
+    margin: 0 auto;
+    height: 150px;
+}
+.user-comment .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-comment .comment-name{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px;
+}
+.user-comment .comment-text{
+    text-align: center;
+    margin: 10px;
+    opacity: .8;
+    max-width: 300px;
+}
+
+
 
 
 
