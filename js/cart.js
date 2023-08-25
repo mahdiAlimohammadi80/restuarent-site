@@ -73,14 +73,10 @@ function showProduct(){
 function increaseCount(elem){
     let elemCard = elem.closest('.card');
     let elemTitle = elemCard.querySelector('h4').innerHTML;
-    cartProduct.forEach((pro ,index)=>{
+    console.log(elemTitle);
+    cartProduct.forEach((pro)=>{
         if(pro.name == elemTitle){
-            if(pro.count > 0){
-                pro.count--;
-                if(pro.count == 0){
-                    cartProduct.splice(index ,1);
-                }
-            } 
+            pro.count++;
         }
     })
     localStorage.setItem('resCart',JSON.stringify(cartProduct));
