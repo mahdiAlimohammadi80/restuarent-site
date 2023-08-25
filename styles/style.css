@@ -1,5 +1,6 @@
+
 @font-face {
-    font-family: 'iran-sans';
+    font-family: 'iransans';
     src: url(/font/IRANSansXFaNum-Regular.woff);
 }
 
@@ -7,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'iran-sans';
+    font-family: 'iransans';
 }
 body{
     direction: rtl;
@@ -909,6 +910,89 @@ header .arrow i{
 .reserve .reserve-btn:hover{
     background-color: #333;
     color: #fff;
+}
+.future-event{
+    margin-top: 80px;
+    padding: 20px 30px;
+}
+.future-event .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.future-event .title{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+.future-event .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.future-event .card{
+    border: 2px solid #fff;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    margin: 20px;
+    transition: .2s;
+}
+.future-event .card:hover{
+    transform: scale(1.02);
+}
+.future-event .card .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.future-event .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+.future-event .card .detals{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 90%;
+    margin: 0 auto;
+    background:rgba(255, 255, 255, .3);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    transition: .2s;
+}
+.future-event .card h4{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    background:rgba(255, 255, 255, .3);
+    transition: .2s;
+}
+.future-event .card:hover .card-text ,
+.future-event .card:hover .card-details{
+    opacity: 1;
+    z-index: 1;
 }
 
 
