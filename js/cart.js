@@ -87,6 +87,25 @@ function increaseCount(elem){
     showProduct();
 }
 
+
+function decreaseCount(elem){
+    let elemCard = elem.closest('.card');
+    let elemTitle = elemCard.querySelector('h4').innerHTML;
+    cartProduct.forEach((pro ,index)=>{
+        if(pro.name == elemTitle){
+            if(pro.count > 0){
+                pro.count--;
+                if(pro.count == 0){
+                    cartProduct.splice(index ,1);
+                }
+            } 
+        }
+    })
+    localStorage.setItem('resCart',JSON.stringify(cartProduct));
+    showProduct();
+}
+
+
 function addProduct(mainTitle) {
     let searchProduct = cartProduct.find((pro) => pro.name == mainTitle);
     if (searchProduct) {
