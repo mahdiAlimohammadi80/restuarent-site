@@ -275,3 +275,25 @@ function nextComment(){
 }
 
 setInterval(nextComment,3000);
+
+//---------------------------------------------------------------
+
+// responsive menu 
+
+const hamburgerMenuIcon = document.querySelector('.hamburger-menu-icon');
+const  resMenu = document.querySelector('.res-menu');
+const closeIcon = document.querySelector('.close');
+const menuLink = document.querySelectorAll('.res-menu .menu-link');
+hamburgerMenuIcon.addEventListener('click',()=>{
+    resMenu.classList.add('active');
+})
+
+closeIcon.addEventListener('click',()=>{
+    resMenu.classList.remove('active');
+})
+
+menuLink.forEach((link)=>{
+    link.addEventListener('click',()=>{
+        resMenu.classList.remove('active');
+    })
+})

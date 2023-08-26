@@ -999,6 +999,7 @@ footer{
     background-color: #706f61;
 }
 footer .container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1009,6 +1010,7 @@ footer .logo-text{
     display: flex;
     flex-direction: column;
     color: #fff;
+    min-width: 490px;
 }
 footer .logo-text .logo{
     display: flex;
@@ -1039,6 +1041,7 @@ footer .footer-links{
     align-items: center;
     color: #fff;
     margin-top: 60px;
+    min-width: 250px;
 }
 footer .footer-links h4{
     font-weight: 500;
@@ -1086,6 +1089,7 @@ footer .social-email{
     display: flex;
     flex-direction: column;
     margin-top: 35px;
+    min-width: 360px;
 }
 footer .social-box{
     display: flex;
@@ -1142,4 +1146,432 @@ footer .email input{
     border-radius: 6px;
     padding: 15px;
     margin-top: 10px;
+}
+.res-menu{
+    opacity: 0;
+    z-index: -100;
+}
+.logo-close .close{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+.logo-close .close i{
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+@media screen and (max-width:1300px){
+    footer .container {
+        padding: 0 9px;
+    }
+}
+@media screen and (max-width:1130px){
+    footer .container{
+        display: flex;
+        align-items: center;
+        padding: 0 60px;
+        padding-bottom: 20px;
+    }
+    .phone-email, .address-time {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    header .menu-list {
+        margin-left: 18px;
+    }
+    header .menu-link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+    }
+    .address-time .time {
+        margin-right: 0;
+    }
+    header .arrow {
+        width: 50px;
+        height: 50px;
+    }
+    .info-box .icon {
+        margin: 5px;
+        font-size: 19px;
+    }
+    .info-box span{
+        font-size: 15px;
+    }
+    .menus .pattern-img1 {
+        display: none;
+    }
+    .menus .pattern-img2 {
+        display: none;
+    }
+    footer .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:920px){
+    header .menu-list {
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+    }
+    header .detail h2 {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
+    header .detail p {
+        font-size: 20px;
+        text-align: center;   
+    }
+    header .details .details-btn {
+        width: 120px;
+        font-size: 15px;
+    }
+    .float-button button {
+        width: 60px;
+        height: 55px;
+        font-size: 15px;
+    }
+    header .button {
+        width: 155px;
+    }
+    header .button .reserve-btn {
+        font-size: 15px;
+    }
+    header .button .shop {
+        margin: 5px;
+    }
+    header .arrow {
+        width: 40px;
+        height: 40px;
+    }
+    .menus {
+        height: 1300px;
+    }
+    .menus .cards .card {
+        padding:0;
+        margin: 20px;
+    }
+    .menus .cards .card:nth-child(1) {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .menus .cards .card:nth-child(2) {
+        position: relative;
+        top: 30px;
+        left: 0;
+    }
+    .menus .cards .card:nth-child(3) {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .reserve .title-text h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .introduce {
+        margin-top: -680px;
+        padding: 20px 30px;
+    }
+    .introduce .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .introduce .gallery .images {
+        margin-left: 20px;
+    }
+    .introduce .details h2 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .introduce .details p {
+        font-size: 16px;
+        opacity: .8;
+        line-height: 30px;
+        margin-top: 10px;
+        max-width: 700px;
+        text-align: justify;
+    }
+    .introduce .history-phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .introduce .history-phone .phone {
+        margin-top: 10px;
+    }
+    .popular-section .image img {
+        width: 150px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .popular-section .details {
+        margin-right: 70px;
+        position: relative;
+    }
+    .popular-section .title-price h4 {
+        font-weight: 500;
+        font-size: 15px;
+        min-width: 155px;
+    }
+    .popular-section .title-price span {
+        position: absolute;
+        top: 10px;
+        left: -81px;
+    }
+    .popular-section .details p {
+        font-size: 13px;
+    }
+    .popular-section .container .button {
+        left: 50%;
+        width: 28%;
+    }
+    .popular-section .container .button button {
+        font-size: 13px;
+    }
+    .res-menu{
+        opacity: 0;
+        z-index: -100;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 0;
+        height: 100vh;
+        background-color: #4f4f4b;
+        display: flex;
+        flex-direction: column;
+        transition: .3s ;
+    }
+    .res-menu.active{
+        opacity: 1;
+        z-index: 150;
+        width: 100%;
+    }
+    .res-menu .menu-list{
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .res-menu .menu-item{
+        margin-top: 30px;
+        list-style: none;
+    }
+    .res-menu .menu-link{
+        text-decoration: none;
+        color: #fff;
+    }
+    .res-menu .logo-close{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .res-menu .logo{
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+    .res-menu .logo img {
+        width: 140px;
+        height: 140px;
+    }
+    .res-menu .logo h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: -28px;
+    }
+}
+@media screen and (max-width:750px){
+    header .arrow {
+        width: 30px;
+        height: 30px;
+    }
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo-text {
+        min-width: 300px;
+    }
+    .introduce {
+        margin-top: -240px;
+        padding: 20px 30px;
+    }
+}
+@media screen and (max-width:585px){
+    header .front {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .phone-email, .address-time {
+        display: none;
+    }
+    header .bottom {
+        padding: 0 ;
+    }
+    header .logo img {
+        width: 140px;
+        height: 140px;
+    }
+    header .logo h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: -28px;
+    }
+    header .menu-list {
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+    }
+    header .detail h2 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+    header .detail p {
+        font-size: 17px;
+        text-align: center;   
+    }
+    header .details .details-btn {
+        width: 100px;
+        font-size: 14px;
+    }
+    .float-button button {
+        width: 60px;
+        height: 55px;
+        font-size: 15px;
+    }
+    header .button {
+        width: 155px;
+    }
+    header .button .reserve-btn {
+        font-size: 15px;
+    }
+    header .button .shop {
+        margin: 5px;
+    }
+    .menus {
+        height: 1400px;
+    }
+    .menu-modal .button-box .button button {
+        width: 50px;
+        height: 30px;
+    }
+    .introduce {
+        margin-top: 0;
+        padding: 20px 30px;
+    }
+    .introduce .gallery .images {
+        margin-left: 20px;
+    }
+    .introduce .images img {
+        width: 146px;
+        height: 120px;
+        object-fit: cover;
+    }
+    .introduce .details {
+        margin-top: 0;
+    }
+    .popular-section .title-text h2 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .popular-section .title-text p {
+        font-size: 15px;
+        opacity: .8;
+        margin-top: 5px;
+    }
+    .popular-section .image img {
+        width: 150px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .popular-section .details {
+        margin-right: 70px;
+        position: relative;
+    }
+    .popular-section .title-price h4 {
+        font-weight: 500;
+        font-size: 15px;
+        min-width: 155px;
+    }
+    .popular-section .title-price span {
+        position: absolute;
+        top: 10px;
+        left: -81px;
+    }
+    .user-comment .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .user-comment .container .title {
+        font-size: 25px;
+    }
+    .user-comment .comment-text {
+        font-size: 14px;
+    }
+    .reserve .image-form {
+        width: 100%;
+        margin: 20px 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reserve .image {
+        width: 93%;
+        height: 150px;
+    }
+    .reserve .form {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .reserve form .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(228px , 1fr));
+        grid-gap: 20px 30px;
+        margin-bottom: 20px;
+    }
+    .reserve .reserve-btn {
+        width: 80px;
+        font-size: 14px;
+    }
+    .future-event .card {
+        width: 190px;
+        height: 264px;
+        margin: 10px;
+    }
+    .future-event .title {
+        font-size: 24px;
+    }
+    .future-event .card .details {
+        font-size: 13px;
+        background-color:#b3af84 ;
+    }
+    .future-event .card h4 {
+        font-weight: 500;
+        background-color:#b3af84 ;
+        font-size: 13px;
+    }
 }
