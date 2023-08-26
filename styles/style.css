@@ -1567,11 +1567,10 @@ footer .email input{
     }
     .future-event .card .details {
         font-size: 13px;
-        background-color:#b3af84 ;
+    
     }
     .future-event .card h4 {
         font-weight: 500;
-        background-color:#b3af84 ;
         font-size: 13px;
     }
 }
