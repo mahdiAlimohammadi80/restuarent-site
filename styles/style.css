@@ -463,7 +463,6 @@ header .arrow i{
 .menu-modal .menu-cards .card{
     color: #fff;
     margin: 20px;
-    min-width: 352px;
 }
 .menu-modal .menu-cards .card-content{
     display: flex;
@@ -1471,9 +1470,13 @@ footer .email input{
     .menus {
         height: 1400px;
     }
+    .menu-modal .button-box .button span {
+        font-size: 15px;
+        display: none;
+    }
     .menu-modal .button-box .button button {
-        width: 50px;
-        height: 30px;
+        width: 60px;
+        height: 40px;
     }
     .introduce {
         margin-top: 0;
